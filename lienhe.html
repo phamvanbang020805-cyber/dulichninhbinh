@@ -1,46 +1,95 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liên hệ - Du lịch Ninh Bình</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên hệ - THE Journey</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+    }
+    .contact-section {
+      padding: 80px 0;
+    }
+    .contact-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      padding: 40px;
+    }
+    h1 {
+      color: #2c3e50;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .info-item {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+    .info-item i {
+      color: #007bff;
+      margin-right: 10px;
+    }
+    footer {
+      margin-top: 60px;
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>📞 Liên hệ với chúng tôi</h1>
-    <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn</p>
-  </header>
 
-  <nav>
-    <a href="index.html">Trang chủ</a>
-    <a href="gioithieu.html">Giới thiệu</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSczCZj50WE4uOjfxGlkLonC2kkalShEduyrfisN8muEZnE-Qg/viewform" target="_blank">Đặt tour</a>
-    <a href="datphong.html">Đặt phòng</a>
-    <a href="tintuc.html">Tin tức</a>
-    <a href="faq.html">FAQ</a>
-    <a href="lienhe.html">Liên hệ</a>
-    <a href="dangnhap.html">Đăng nhập</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">THE Journey</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="gioithieu.html">Giới thiệu</a></li>
+          <li class="nav-item"><a class="nav-link" href="tour.html">Tour</a></li>
+          <li class="nav-item"><a class="nav-link active" href="lienhe.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <div class="container">
-    <h2>Thông tin liên hệ</h2>
-    <p><strong>Địa chỉ:</strong> 207 Giải Phóng, Quận Hai Bà Trưng, Hà Nội</p>
-    <p><strong>Điện thoại:</strong> 0988 123 456</p>
-    <p><strong>Email:</strong> dulichninhbinh@gmail.com</p>
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-card mx-auto" style="max-width: 600px;">
+        <h1>Liên hệ với chúng tôi</h1>
+        <p class="text-center mb-4">Nếu bạn có bất kỳ câu hỏi nào về tour hoặc hợp tác, hãy liên hệ với chúng tôi qua thông tin dưới đây.</p>
 
-    <h3>Gửi tin nhắn cho chúng tôi</h3>
-    <form>
-      <label>Họ và tên:</label><br>
-      <input type="text" name="name" placeholder="Nhập họ tên"><br><br>
-      <label>Email:</label><br>
-      <input type="email" name="email" placeholder="Nhập email"><br><br>
-      <label>Nội dung:</label><br>
-      <textarea name="message" rows="5" placeholder="Nhập tin nhắn..."></textarea><br><br>
-      <button type="submit">Gửi liên hệ</button>
-    </form>
-  </div>
+        <div class="info-item"><i class="bi bi-geo-alt-fill"></i><strong>Địa chỉ:</strong> Xã Lai Thành, Tỉnh Ninh Bình</div>
+        <div class="info-item"><i class="bi bi-telephone-fill"></i><strong>Điện thoại:</strong> 0921379359</div>
+        <div class="info-item"><i class="bi bi-envelope-fill"></i><strong>Email:</strong> <a href="mailto:vanbang.work@gmail.com">vanbang.work@gmail.com</a></div>
 
-  <footer>© 2025 Du lịch Ninh Bình | Thiết kế bởi <strong>Bằng 💚</strong></footer>
+        <div class="mt-4 text-center">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSczCZj50WE4uOjfxGlkLonC2kkalShEduyrfisN8muEZnE-Qg/viewform" 
+             target="_blank" 
+             class="btn btn-primary btn-lg">
+            Đặt tour ngay
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 THE Journey | Thiết kế bởi Bằng</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 </html>
