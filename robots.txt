@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phamvanbang020805-cyber.github.io/dulichninhbinh/sitemap.xml
